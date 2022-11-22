@@ -23,7 +23,6 @@ int main()
 
     do
     {
-
         winner = ' ';
         response = ' ';
 
@@ -51,13 +50,12 @@ int main()
         printBoard();
         printWinner(winner);
         printf("\nWoud you like to play again? (Y/N): \n");
-        scanf("%c");
-        scanf("%c", &response);
+        scanf(" %c", &response);
 
     } while (response == 'Y');
 
     printf("\nThanks for playing!!!\n");
-    
+
     return 0;
 }
 
@@ -140,7 +138,7 @@ void computerMove()
             x = rand() % 3;
             y = rand() % 3;
         } while (board[x][y] != ' ');
-        
+
         board[x][y] = computer;
     }
     else
