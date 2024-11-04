@@ -52,7 +52,7 @@ int main()
         printf("\nWoud you like to play again? (Y/N): \n");
         scanf(" %c", &response);
 
-    } while (response == 'Y');
+    } while (response == 'Y' || response == 'y');
 
     printf("\nThanks for playing!!!\n");
 
